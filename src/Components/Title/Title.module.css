@@ -2,8 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
-.SubTitles h3{
+.SubTitles h4{
     color: #CECEDC;
     font-weight: 600;
 
@@ -17,9 +18,19 @@
    color: #CECEDC;
 }
 @media screen and (max-width: 420px){
-    .SubTitles h3{
-        font-size: 16px;
+    .SubTitles{
+        max-width: 100%;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    }
+    .SubTitles h4{
+        font-size: 12px;
     
     }
-    
+    .ArrowLeft,
+    .ArrowRight{
+   color: #574fd8;
+}
 }

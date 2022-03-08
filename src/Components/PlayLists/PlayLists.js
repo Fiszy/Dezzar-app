@@ -54,8 +54,7 @@ export const PlayLists = (props) => {
         <PrivateLayout> 
         <div>
         <div className={styles.SubTitles}>
-            <h3>FEATURED PLAYLISTS</h3>
-            <div className={styles.Line}></div>
+            <h4>FEATURED PLAYLISTS</h4>
             <div>
                 <span className={styles.ArrowLeft} onClick={() => scroll(-20)}><i class="fas fa-chevron-left"></i></span>
                 <span className={styles.ArrowRight} onClick={() => scroll(20)}><i class="fas fa-chevron-right"></i></span>

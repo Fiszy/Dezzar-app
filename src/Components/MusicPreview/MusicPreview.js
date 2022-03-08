@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { PrivateLayout } from '../../HOC/Layout/PrivateLayout/PrivateLayout';
-import styles from './MusicPreview.module.css'
-import banner from '../../Images/Yababuluku.jpeg'
-// import DZ from 'deezer-web-api'
+import styles from './MusicPreview.module.css';
+// import DZ from 'deezer-web-api'                //initialized in index.html
 
 export const MusicPreview = (props) => { 
 
@@ -18,6 +17,7 @@ let selected = JSON.parse(window.localStorage.getItem("music_data"));
         audio.play();
         console.log('playing')
         //console.log(track)
+
         // DZ.player.playPlaylist(12659678, 3, function(response){
         //     console.log("track list", response.tracks);
         // });

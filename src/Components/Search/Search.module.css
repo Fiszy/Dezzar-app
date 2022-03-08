@@ -1,7 +1,4 @@
-.SearchContainer{
- /* display: flex;
- justify-content:center;
- align-items: center; */
+.SearchContainer{ 
  margin: auto;
  padding: 2% 2%;
 }
@@ -10,30 +7,39 @@
     justify-content:center;
     align-items: center;
     margin: auto;
-    width: 50%;
+    width: 300px;
     padding: 5px 20px;
 
    }
    .SearchInputContainer{
+    background: #574FD8;
+    width: 400px;
     display: flex;
-    justify-content:center;
     align-items: center;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border-collapse: collapse;
 
    }
-   .SearchContainer input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
+   .SearchInputContainer a{
+    width: 50px;
+    padding: 4px 30px;
+    font-size: 16px;
     border: none;
-  }
+    color:#cecedc;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    text-decoration: none;
+}
   
-  .SearchContainer .SearchInputContainer button {
-    padding: 8px 10px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-  }
+.SearchInput::placeholder{
+
+    color:#fff;
+}
+
+.SearchInput:focus{
+    outline: none;
+}
   .CardDisplay{
     margin-top: 50px;
     display: flex;

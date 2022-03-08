@@ -1,7 +1,6 @@
 .PreviewContainer{
  width: 95%;
  margin: auto;
- /* background-color: #f7e6e2; */
  padding-top: 50px;
  padding-bottom: 30px;
  
@@ -29,24 +28,24 @@
 }
 .Controls i{
 font-size: 35px;
+color: #cecedc;
 }
 .Controls .fa-play-circle{
 font-size: 35px;
+background-color: #574FD8;
 }
 .Controls .fa-step-forward{
 font-size: 25px;
 }
 @media screen and (max-width: 750px){
-/* .web{
-display: none;
-}  */
+    .PreviewContainer{
+        margin: auto;
+    }
 .PreviewContainer img{
-    width: auto;
+    max-width: 100%;
     height: auto;
     }
-    /* .mobile{
-        display: block;
-    } */
+   
     .Controls{
     position: fixed;
     bottom: 0;
@@ -55,5 +54,11 @@ display: none;
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
     padding: 10px 100px;
     max-width: 100%;
+    }
+}
+@media screen and (max-width: 750px){
+    .Controls{
+        padding: 20px 100px;
+
     }
 }

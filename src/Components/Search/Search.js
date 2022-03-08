@@ -75,10 +75,16 @@ console.log(KEY)
 return(
     <PrivateLayout>
          <div className={styles.SearchContainer}>
-        <div className={styles.SearchInputContainer}>
+
+         <div className={styles.SearchInputContainer}>
+         <input type="text" value={search} name="search" onChange={handleSearch} className={styles.SearchInput} placeholder="Search here"/>
+                      <a href="***" onClick={handleSelctedPlayList}><i className="fas fa-search"></i></a>
+        </div>
+
+        {/* <div className={styles.SearchInputContainer}>
             <input type="text" value={search} name="search" onChange={handleSearch} className={styles.SearchInput} placeholder="Search here"/>
             <button onClick={handleSelctedPlayList}><i className="fas fa-search"></i></button>
-        </div>
+        </div> */}
 
         <div className={styles.CardDisplay}>
         {term.map((term, index) => ( 

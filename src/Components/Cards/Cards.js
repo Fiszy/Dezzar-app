@@ -8,12 +8,10 @@ console.log(KEY)
 export const Cards = (props) => { 
 
     const [music, setMusic] = useState([]);
-    // const [data, setData] = useState([]);
-    // const [playList, setPlayList] = useState([]);
-    // const [category, setCategory] = useState([])
+    
 
     useEffect(() => {
-        fetch(`${API_BASE_URL}/chart`, {
+        fetch(`${API_BASE_URL}/chart/{new-releases}`, {
             'method': 'GET',
             'header':{
                 'Content-Type': 'application/json',
@@ -28,10 +26,7 @@ export const Cards = (props) => {
             // console.log(data)
             setMusic(response.albums.data)
             console.log(music)
-            // setCategory(response.playlists.data)
-            // console.log(category)
-            // setPlayList(response.playlists.data)
-            // console.log(playList)
+            
         })
         .catch(error => {
             console.log(error)
