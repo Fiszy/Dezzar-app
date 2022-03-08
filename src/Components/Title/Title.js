@@ -7,8 +7,8 @@ export const Title = () => (
             <h4>RELEASED THIS WEEK</h4>
             {/* <div className={styles.Line}></div> */}
             <div>
-                <span className={styles.ArrowLeft}><i class="fas fa-chevron-left"></i></span>
-                <span className={styles.ArrowRight}><i class="fas fa-chevron-right"></i></span>
+                <span className={styles.ArrowLeft}><i className="fas fa-chevron-left"></i></span>
+                <span className={styles.ArrowRight}><i className="fas fa-chevron-right"></i></span>
             </div>
         </div>
     </div>

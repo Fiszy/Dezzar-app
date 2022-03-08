@@ -1,6 +1,7 @@
 import React,{useState, } from 'react';
 import { PrivateLayout } from '../../HOC/Layout/PrivateLayout/PrivateLayout';
 import styles from './Search.module.css';
+import { Link } from 'react-router-dom'
 
 export const Search = (props) => { 
 
@@ -89,14 +90,14 @@ return(
         <div className={styles.CardDisplay}>
         {term.map((term, index) => ( 
             <div className={styles.CardContainer} key={index} onClick={() => handleSelctedPlayList(term)}>
-                <a href="/musicpreview" onClick={() => previewSelected(term)} style={{textDecoration:"none"}}>
+                <Link to="/musicpreview" onClick={() => previewSelected(term)} style={{textDecoration:"none"}}>
             <div className={styles.Card} >
                 <img src={`${term.album.cover_xl}`} alt="avatar"/>
                 <div className={styles.Text}>
                     <h5><b>{`${term.title}`}</b></h5>
                 </div>
             </div>
-            </a>
+            </Link>
         </div>
         ))}
         

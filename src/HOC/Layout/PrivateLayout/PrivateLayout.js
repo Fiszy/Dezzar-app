@@ -18,7 +18,7 @@ export const PrivateLayout = (props) =>{
           <aside className={styles.SidebarCont}>
             <SideBar />
           </aside>
-          <main class={styles.PageContent}>
+          <main className={styles.PageContent}>
             <div className={styles.Body}>
               <GetPageContent />
             </div>

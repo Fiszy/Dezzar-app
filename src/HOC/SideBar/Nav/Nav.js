@@ -6,34 +6,34 @@ export const Nav = () => (
   
       <ul className={styles.NavMenu}>
       <div className={styles.SidebarList}>
-        <Link to="/" style={{textDecoration:"none"}}><a href="/" className={styles.SidebarLink}>
+        <Link to="/" style={{textDecoration:"none"}}className={styles.SidebarLink}>
         <li><i className="fas fa-headphones"></i></li>
           <span>Discover</span>
-        </a></Link>
+        </Link>
       </div>
       <div className={styles.SidebarList}>
-      <Link to="/search" style={{textDecoration:"none"}}><a href="/" className={styles.SidebarLink}>
+      <Link to="/search" style={{textDecoration:"none"}} className={styles.SidebarLink}>
         <li><i className="fas fa-search"></i> </li>
           <span>Search</span>
-        </a></Link>
+        </Link>
       </div>
       <div className={styles.SidebarList}>
-      <Link to="/favourites" style={{textDecoration:"none"}}><a href="/favourites" className={styles.SidebarLink}>
+      <Link to="/favourites" style={{textDecoration:"none"}} className={styles.SidebarLink}>
         <li><i className="fas fa-heart"></i></li>
           <span>Favourites</span>
-        </a></Link>
+        </Link>
       </div>
       <div className={styles.SidebarList}>
-      <Link to="/playlist" style={{textDecoration:"none"}}><a href="/" className={styles.SidebarLink}>
+      <Link to="/playlist" style={{textDecoration:"none"}} className={styles.SidebarLink}>
         <li><i className="far fa-play-circle"></i> </li>
           <span>PlayList</span>
-        </a></Link>
+        </Link>
       </div>
       <div className={styles.SidebarList}>
-      <Link to="/chart" style={{textDecoration:"none"}}><a href="/" className={styles.SidebarLink}>
+      <Link to="/chart" style={{textDecoration:"none"}} className={styles.SidebarLink}>
         <li><i className="far fa-chart-bar"></i></li>
           <span>Charts</span>
-        </a></Link>
+        </Link>
       </div>
 
 
