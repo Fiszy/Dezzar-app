@@ -1,0 +1,15 @@
+.SidebarCont {
+    background: #574FD8;
+    box-shadow: 0 0 5px #ccc;
+    position: fixed;
+    width: 22%;
+    top: 0px;
+    min-height: 100vh;
+  }
+  
+@media  screen and (max-width: 350px){
+  .SidebarCont{
+    min-width: auto;
+    height: auto;
+  }
+}

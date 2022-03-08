@@ -1,0 +1,25 @@
+.SubTitles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.SubTitles h3{
+    color: #CECEDC;
+    font-weight: 600;
+
+}
+.Line{
+    width: 50%;
+    background-color: 5px solid #CECEDC;
+} 
+.ArrowLeft,
+.ArrowRight{
+   color: #CECEDC;
+}
+@media screen and (max-width: 420px){
+    .SubTitles h3{
+        font-size: 16px;
+    
+    }
+    
+}

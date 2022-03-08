@@ -1,0 +1,53 @@
+.NavbarCont {
+  height: 150px;
+  background: url("../../Images/musicgirl.png") no-repeat center/cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  background-color: #FCB5A8
+  }
+  .HeaderText{
+    line-height: 16px;
+    color: #fff;
+    padding-right: 50px;
+  }
+  .HeaderText h3, .HeaderTextMobile h3{
+    line-height: 16px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .HeaderText p, .HeaderTextMobile p{
+    line-height: 16px;
+    color: #fff;
+    font-size: 22px;   
+   font-weight: 600;
+
+  }
+  .Sun{
+    color: #FDD40D;
+  }
+  .Moon{
+    color: #39383D;
+  }
+  .HeaderTextMobile{
+    display:none;
+    line-height: 16px;
+    color: #fff;
+    padding-right: 50px;
+  }
+
+  @media screen and (max-width: 400px){
+    .NavbarCont{
+      background: none;
+      background-color: #FCB5A8;
+      justify-content: flex-start;
+      left: 20%;
+    }
+    .NavbarCont img{
+      display: none;
+    }
+  }
