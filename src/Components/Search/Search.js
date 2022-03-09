@@ -14,27 +14,6 @@ const KEY = process.env.REACT_APP_Secret_Key
 console.log(KEY)
 
 
-
-// useEffect(() => {
-//     fetch(`${API_BASE_URL}/search?q=eminem`, {
-//         'method': 'GET',
-//         'header':{
-//             'Content-Type': 'application/json',
-//             'Access-Control-Allow-Orign':'*',
-//             'x-rapidapi-host': 'bd071c3ae2f9835eed3a239453492c02'
-//         }
-//     })
-//     .then(response => response.json())
-//     .then(response => {
-//         console.log(response)
-//         setTerm(response.data);
-//     })
-//     .catch(error => {
-//         console.log(error)
-//     })
-
-//  }, []);
-
  const handleSearch = (event) => {
     //event.preventDefault()
     const {value} = event.target
@@ -76,16 +55,11 @@ console.log(KEY)
 return(
     <PrivateLayout>
          <div className={styles.SearchContainer}>
-
          <div className={styles.SearchInputContainer}>
-         <input type="text" value={search} name="search" onChange={handleSearch} className={styles.SearchInput} placeholder="Search here"/>
-                      <a href="***" onClick={handleSelctedPlayList}><i className="fas fa-search"></i></a>
+            <input type="text" value={search} name="search" onChange={handleSearch} className={styles.SearchInput} placeholder="Search here"/>
+             <a href="***" onClick={handleSelctedPlayList}><i className="fas fa-search"></i></a>
         </div>
 
-        {/* <div className={styles.SearchInputContainer}>
-            <input type="text" value={search} name="search" onChange={handleSearch} className={styles.SearchInput} placeholder="Search here"/>
-            <button onClick={handleSelctedPlayList}><i className="fas fa-search"></i></button>
-        </div> */}
 
         <div className={styles.CardDisplay}>
         {term.map((term, index) => ( 

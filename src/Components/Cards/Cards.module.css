@@ -46,33 +46,45 @@
     left: 0;
     transition: 0.5s all ease out;
 }
+
+.CardContainer a{
+  text-decoration: none;
+
+}
 .Card {
     transition: 0.3s;
     width: 150px;
-    text-decoration: none;
-    padding: 8px 16px;
+    text-decoration: none;    
   }
   .Card img{
       width: 100%;
+      border-radius: 3px;
   }
   
-  .Text {
+  .Card .Text {
     color:#39383D;
     text-decoration: none;
-    
+    overflow: hidden;
+white-space: nowrap;
+padding: 10px;
   }
   .Text h6 b{
     text-decoration: none;
-    font-size: 12px;
+    font-size: 11px;
+    
     
   }
   @media screen and (max-width: 750px){
-    
   }
   @media screen and (max-width: 420px){
     .CardDisplay{
       flex-wrap: wrap;
+      margin-top: 0;
+        width: 100%;
+        justify-content:center;
+     
     
     }
+    
     
 }

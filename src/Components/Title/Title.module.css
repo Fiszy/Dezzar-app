@@ -7,11 +7,13 @@
 .SubTitles h4{
     color: #CECEDC;
     font-weight: 600;
+    /* font-size: 20px; */
 
 }
-.Line{
+.SubTitles .Line{
     width: 50%;
-    background-color: 5px solid #CECEDC;
+    height: 3px;
+    background-color: 5px solid #000;
 } 
 .ArrowLeft,
 .ArrowRight{
@@ -19,14 +21,14 @@
 }
 @media screen and (max-width: 420px){
     .SubTitles{
-        max-width: 100%;
-        display: flex;
+    max-width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
         
     }
     .SubTitles h4{
-        font-size: 12px;
+        font-size: 14px;
     
     }
     .ArrowLeft,
