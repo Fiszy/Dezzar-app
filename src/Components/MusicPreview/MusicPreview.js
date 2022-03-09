@@ -6,7 +6,7 @@ import styles from './MusicPreview.module.css';
 export const MusicPreview = (props) => { 
 
 let selected = JSON.parse(window.localStorage.getItem("music_data"));
-// console.log(selected);
+console.log(selected);
 
     const [track, setTrack] = useState(selected.link)
    
@@ -38,7 +38,6 @@ let selected = JSON.parse(window.localStorage.getItem("music_data"));
             <img src={selected.picture_xl ? selected.picture_xl : selected.cover_xl} alt="banner"/>
             <div className={styles.MusicPlay}>
                 <h2>{selected.title}</h2>
-                <p>{selected.title}</p>
                 
                 <div className={styles.Controls}>
                     <div><i className="fas fa-step-forward"></i></div>

@@ -13,7 +13,7 @@
    }
    .SearchInputContainer{
     background: #574FD8;
-    width: 400px;
+    /* width: 400px; */
     display: flex;
     align-items: center;
     padding: 5px 20px;
@@ -59,19 +59,25 @@
   }
   .Card img{
       width: 100%;
+      border-radius: 3px;
   }
   .Text{
     color:#39383D;
     text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
     /* padding: 2px 16px; */
 
   }
   h6{
       margin: auto;
       text-align: center;
-      font-size: 12px;
+      font-size: 11px;
   }
   @media screen and (max-width: 420px){
+    .SearchContainer{
+      width: 50%;
+    }
     .CardContainer{
       flex-wrap: wrap;
     
@@ -79,6 +85,17 @@
     .SearchInput{
       max-width: 50%;
     }
-    
+    .CardDisplay{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .Card {
+      width: 70%;
+      margin: auto;
+    }
+    .Card img{
+      max-width: 100%;
+    }
 }
   

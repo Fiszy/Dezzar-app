@@ -37,6 +37,9 @@ background-color: #574FD8;
 .Controls .fa-step-forward{
 font-size: 25px;
 }
+.noDisplay{
+    font-size:11px;
+  }
 @media screen and (max-width: 750px){
     .PreviewContainer{
         margin: auto;
